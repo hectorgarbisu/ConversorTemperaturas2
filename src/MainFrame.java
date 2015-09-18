@@ -167,6 +167,7 @@ public class MainFrame extends javax.swing.JFrame {
         Double fahTemp,kelTemp,celTemp = Double.parseDouble(celsiusDataText);
         fahTemp = 1.8*celTemp +32;
         kelTemp = celTemp+273.15;
+        if(kelTemp<0) return;
         fahrenheitDataField.setText(""+fahTemp);
         kelvinDataField.setText(""+kelTemp); 
     }//GEN-LAST:event_celsiusDataFieldKeyReleased
@@ -177,6 +178,7 @@ public class MainFrame extends javax.swing.JFrame {
         Double kelTemp,celTemp,fahTemp = Double.parseDouble(fahDataText);
         celTemp = (fahTemp-32)/1.8;
         kelTemp = celTemp+273.15;
+        if(kelTemp<0) return;
         celsiusDataField.setText(""+celTemp);
         kelvinDataField.setText(""+kelTemp); 
     }//GEN-LAST:event_fahrenheitDataFieldKeyReleased
@@ -187,6 +189,7 @@ public class MainFrame extends javax.swing.JFrame {
         Double fahTemp,celTemp,kelTemp = Double.parseDouble(kelDataText);
         celTemp = kelTemp-273.15;
         fahTemp = 1.8*celTemp +32;
+        if(kelTemp<0) return;
         celsiusDataField.setText(""+celTemp);
         fahrenheitDataField.setText(""+fahTemp);
     }//GEN-LAST:event_kelvinDataFieldKeyReleased
@@ -202,7 +205,6 @@ public class MainFrame extends javax.swing.JFrame {
     private boolean inputIsValid(String inputText){
         if(inputText.isEmpty()) return false;
         if(!isNumeric(inputText)) return false;
-        if(isBelowZero(inputText)) return false;
        return true;
     }
     private static boolean isNumeric(String str){  
@@ -213,10 +215,6 @@ public class MainFrame extends javax.swing.JFrame {
             return false;  
         }  
         return true;  
-    }
-    private boolean isBelowZero(String str) {
-        double d = Double.parseDouble(str);  
-        return d<-273.15;
     }
     /**
      * @param args the command line arguments
