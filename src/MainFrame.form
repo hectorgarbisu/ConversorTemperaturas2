@@ -99,7 +99,7 @@
     </Component>
     <Component class="javax.swing.JLabel" name="fahrenheitDataLabel">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Temperatura (Fahrenheit))"/>
+        <Property name="text" type="java.lang.String" value="Temperatura (Fahrenheit)"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="fahrenheitDataField">
@@ -111,7 +111,7 @@
     </Component>
     <Component class="javax.swing.JLabel" name="kelvinDataLabel">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Temperatura (Kelvin))"/>
+        <Property name="text" type="java.lang.String" value="Temperatura (Kelvin)"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="kelvinDataField">

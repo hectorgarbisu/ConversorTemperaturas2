@@ -73,7 +73,7 @@ public class MainFrame extends javax.swing.JFrame {
             }
         });
 
-        fahrenheitDataLabel.setText("Temperatura (Fahrenheit))");
+        fahrenheitDataLabel.setText("Temperatura (Fahrenheit)");
 
         fahrenheitDataField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -89,7 +89,7 @@ public class MainFrame extends javax.swing.JFrame {
             }
         });
 
-        kelvinDataLabel.setText("Temperatura (Kelvin))");
+        kelvinDataLabel.setText("Temperatura (Kelvin)");
 
         kelvinDataField.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyReleased(java.awt.event.KeyEvent evt) {
